@@ -1,11 +1,13 @@
 import { Persona } from "./Persona";
+import { Direccion } from "./Direccion";
 
 export class Empleado extends Persona{
     salario: number
     horasTrabajadas: number
+    
 
-    constructor(nombre:string, edad: number, salario: number, horasTrabajadas: number){
-        super(nombre, edad)
+    constructor(nombre:string, edad: number, salario: number, horasTrabajadas: number, direccion: Direccion){
+        super(nombre, edad, direccion)
         this.salario= salario
         this.horasTrabajadas= horasTrabajadas
     }
