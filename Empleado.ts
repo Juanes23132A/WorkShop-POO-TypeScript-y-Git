@@ -1,6 +1,6 @@
 import { Persona } from "./Persona";
 
-class Empleado extends Persona{
+export class Empleado extends Persona{
     salario: number
     horasTrabajadas: number
 
@@ -12,5 +12,9 @@ class Empleado extends Persona{
 
     trabajar(): string{
         return `El empleado ${this.nombre} de ${this.getEdad} años de edad trabaja ${this.horasTrabajadas} horas al dia`
+    }
+    
+    supersaludar(): string {
+        return `Empleado: Hola ${this.nombre} tu edad es ${this.getEdad} y el salario es de ${this.salario}`
     }
 }
