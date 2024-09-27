@@ -16,3 +16,7 @@ Personas.push(new Persona("Julieta", 24))
 Personas.forEach((Personas) => {
     console.log(Personas.saludar());
 })
+
+Personas.forEach((Personas) => {
+    console.log(Personas.getEdad);
+})

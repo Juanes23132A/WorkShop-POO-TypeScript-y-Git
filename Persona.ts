@@ -1,10 +1,14 @@
 export class Persona {
     nombre: string
-    edad: number
+    private edad: number
 
     constructor(nombre: string, edad: number) {
         this.nombre = nombre
         this.edad = edad
+    }
+
+    public get getEdad(): number{
+        return this.edad;
     }
 
     saludar(): string {
