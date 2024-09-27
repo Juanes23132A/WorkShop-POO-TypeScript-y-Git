@@ -11,7 +11,7 @@ export class Empleado extends Persona{
     }
 
     trabajar(): string{
-        return `El empleado ${this.nombre} de ${this.getEdad} años de edad trabaja ${this.horasTrabajadas} horas al dia`
+        return `El empleado ${this.nombre} trabaja ${this.horasTrabajadas} horas al dia`
     }
     
     supersaludar(): string {

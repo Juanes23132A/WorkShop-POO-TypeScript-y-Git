@@ -1,3 +1,4 @@
+import { Empleado } from "./Empleado"
 import { Persona } from "./Persona"
 
 const Personas: Array<Persona> = []
@@ -19,4 +20,23 @@ Personas.forEach((Personas) => {
 
 Personas.forEach((Personas) => {
     console.log(Personas.getEdad);
+})
+
+
+
+const Empleados: Array<Empleado> = []
+
+Empleados.push(new Empleado("Juan", 19, 60000, 8))
+Empleados.push(new Empleado("Sebastian", 23, 73000, 7))
+Empleados.push(new Empleado("Camila", 28, 64000, 7))
+Empleados.push(new Empleado("Juana", 17, 40000, 5))
+Empleados.push(new Empleado("Daniel", 32, 62000, 7))
+Empleados.push(new Empleado("Carolina", 22, 65000, 8))
+Empleados.push(new Empleado("Sara", 31, 95000, 7))
+Empleados.push(new Empleado("Carlos", 18, 58000, 8))
+Empleados.push(new Empleado("Pablo", 43, 67000, 8))
+Empleados.push(new Empleado("Julieta", 24, 72000, 8))
+
+Empleados.forEach((Empleados) => {
+    console.log(Empleados.supersaludar());
 })
