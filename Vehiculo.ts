@@ -1,14 +1,19 @@
-abstract class Vehiculo {
-    abstract arrancar() : void
+export abstract class Vehiculo {
+    nombre: string
+    constructor(nombre: string) {
+        this.nombre = nombre
+    }
+
+    abstract arrancar(): void
 }
 
-class Coche extends Vehiculo{
+export class Coche extends Vehiculo {
     arrancar(): void {
         console.log('El carro arranca')
     }
 }
 
-class Moto extends Vehiculo{
+export class Moto extends Vehiculo {
     arrancar(): void {
         console.log('La moto arranca')
     }
