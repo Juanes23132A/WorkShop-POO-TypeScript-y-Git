@@ -5,7 +5,7 @@ export class Persona {
     nombre: string
     private edad: number
     direccion: Direccion
-    vehiculos: Array<Vehiculo>
+    private vehiculos: Array<Vehiculo>
 
     constructor(nombre: string, edad: number, direccion: Direccion) {
         this.nombre = nombre
@@ -16,6 +16,10 @@ export class Persona {
 
     public get getEdad(): number {
         return this.edad;
+    }
+    
+    private get getVehiculos(): Array<Vehiculo>{
+        return this.vehiculos;
     }
 
     AgregarVehiculo(vehiculo: Vehiculo): void {
@@ -30,16 +34,17 @@ export class Persona {
         return (`Persona: Tú nombre es ${this.nombre} y tienes ${this.edad} años`);
     }
 }
-const moto1 = new Coche("SuperDuke 1290 R")
-const moto2 = new Moto("Husqvarna 701 Supermotard")
-const carro1 = new Moto("Camaro ZL1")
+
+// const moto1 = new Coche("SuperDuke 1290 R")
+// const moto2 = new Moto("Husqvarna 701 Supermotard")
+// const carro1 = new Moto("Camaro ZL1")
 
 
-const Persona1 = new Persona("Juan", 19, { "calle": "calle", "ciudad": "Medellin", "pais": "Colombia" })
+// const Persona1 = new Persona("Juan", 19, { "calle": "calle", "ciudad": "Medellin", "pais": "Colombia" })
 
-Persona1.AgregarVehiculo(moto1);
-Persona1.AgregarVehiculo(moto2);
-Persona1.AgregarVehiculo(carro1);
+// Persona1.AgregarVehiculo(moto1);
+// Persona1.AgregarVehiculo(moto2);
+// Persona1.AgregarVehiculo(carro1);
 
-console.log(Persona1);
-Persona1.Vehiculos();
+// console.log(Persona1);
+// Persona1.Vehiculos();
