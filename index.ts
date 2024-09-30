@@ -24,7 +24,7 @@ Personas.forEach((Personas) =>{
 })
 
 
-const Empleados: Array<Empleado> = []
+export const Empleados: Array<Empleado> = []
 
 Empleados.push(new Empleado("Juan", 19, 60000, 8, {"calle":"calle","ciudad":"Medellin","pais":"Colombia"}, estadoCivil.CASADO))
 Empleados.push(new Empleado("Sebastian", 23, 73000, 7, {"calle":"carrera","ciudad":"Pereira","pais":"Colombia"}, estadoCivil.DIVORCIADO))
