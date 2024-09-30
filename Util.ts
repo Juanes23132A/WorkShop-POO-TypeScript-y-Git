@@ -14,7 +14,7 @@ const crearJson = () => {
 }
 
 const transformarJson =  (crearJson: any) => {
-    const PersonaJson = new Persona(crearJson.nombre, crearJson.edad, crearJson.direccion);
+    const PersonaJson = new Persona(crearJson.nombre, crearJson.edad, crearJson.direccion, crearJson.EstadoCivil);
     return  PersonaJson;
 
 }

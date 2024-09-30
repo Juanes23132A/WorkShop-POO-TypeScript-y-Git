@@ -114,14 +114,14 @@ const EmpleadosJson = [
     }
 ]
 
-const empleados: Empleado[] = EmpleadosJson.map((empleadoJson) => {
+const empleados: Empleado[] = EmpleadosJson.map((empleadoJson: any) => {
     const direccion = empleadoJson.direccion;
     return new Empleado(
       empleadoJson.nombre,
       empleadoJson.edad,
       empleadoJson.salario,
       empleadoJson.horasTrabajadas,
-      { calle: direccion.calle, ciudad: direccion.ciudad, pais: direccion.pais }
+      { calle: direccion.calle, ciudad: direccion.ciudad, pais: direccion.pais }, empleadoJson.EstadoCivil
     );
   });
   

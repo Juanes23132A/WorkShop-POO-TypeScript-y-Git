@@ -1,4 +1,5 @@
 import { Direccion } from "./Direccion"
+import { estadoCivil } from "./EstadoCivil"
 import { Coche, Moto, Vehiculo } from "./Vehiculo"
 
 export class Persona {
@@ -6,12 +7,14 @@ export class Persona {
     private edad: number
     direccion: Direccion
     private vehiculos: Array<Vehiculo>
+    EstadoCivil: estadoCivil
 
-    constructor(nombre: string, edad: number, direccion: Direccion) {
+    constructor(nombre: string, edad: number, direccion: Direccion, EstadoCivil: estadoCivil) {
         this.nombre = nombre
         this.edad = edad
         this.direccion = direccion
         this.vehiculos = []
+        this.EstadoCivil = EstadoCivil
     }
 
     public get getEdad(): number {
